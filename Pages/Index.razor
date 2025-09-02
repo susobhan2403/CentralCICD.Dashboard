@@ -36,17 +36,17 @@
     </div>
 </div>
 
-<KpiCard Title="Last Month — Projects Migrated" KpiValue="@_monthly.Last()" Subnote="+ prior month trend"
+<KpiCard Title="Last Month — Projects Migrated" KpiValue="@_monthly.Last().ToString()" Subnote="+ prior month trend"
          Spark="@_monthly.Select(i => (double)i)" />
 
 <KpiCard Title="Security Templates Applied (Avg %)" KpiValue="@($"{Data.AvgSecurityAdoption() * 100:0.0}%")"
          Subnote="Includes SAST/SCA/Container/Secret scans" Spark="@_score[2].TrendLine" />
 
-<KpiCard Title="Total Projects" KpiValue="@Data.TotalProjects()" Subnote="Front-runners in scope"
+<KpiCard Title="Total Projects" KpiValue="@Data.TotalProjects().ToString()" Subnote="Front-runners in scope"
          Spark="@Enumerable.Range(1,12).Select(i => (double)(Data.TotalProjects()-12+i))" />
 
 <KpiCard Title="Pipelines Migrated (Median per Project)"
-         KpiValue="@_projects.Select(p => p.MigratedPipelines).OrderBy(x=>x).ElementAt(_projects.Count/2)"
+         KpiValue="@_projects.Select(p => p.MigratedPipelines).OrderBy(x => x).ElementAt(_projects.Count / 2).ToString()"
          Subnote="Across all domains" Spark="@_projects.Select(p => Math.Round(p.AdoptionPct*100,1))" />
 
 <!-- MIDDLE: Scorecard -->
