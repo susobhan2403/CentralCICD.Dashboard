@@ -1,0 +1,13 @@
+﻿@inject IJSRuntime JS
+
+<div id="@Id" class="chart-md"></div>
+
+@code {
+    [Parameter] public IEnumerable<double> Values { get; set; } = Array.Empty<double>();
+    [Parameter] public string Id { get; set; } = $"hist_{Guid.NewGuid():N}";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+        => await JS.InvokeVoidAsync("amc.renderHistogram", Id, Values?.ToArray() ?? Array.Empty<double>());
+
+    public async ValueTask DisposeAsync() => await JS.InvokeVoidAsync("amc.dispose", Id);
+}

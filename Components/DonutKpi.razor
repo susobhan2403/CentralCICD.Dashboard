@@ -1,0 +1,14 @@
+﻿@inject IJSRuntime JS
+
+<div id="@Id" class="chart-lg"></div>
+
+@code {
+    [Parameter] public double Percent { get; set; }
+    [Parameter] public string Label { get; set; } = "";
+    [Parameter] public string Id { get; set; } = $"donut_{Guid.NewGuid():N}";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+        => await JS.InvokeVoidAsync("amc.renderDonut", Id, Percent, Label);
+
+    public async ValueTask DisposeAsync() => await JS.InvokeVoidAsync("amc.dispose", Id);
+}

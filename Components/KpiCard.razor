@@ -1,0 +1,20 @@
+﻿<div class="card">
+    <h4>@Title</h4>
+    <div class="row" style="align-items:flex-end">
+        <div>
+            <div class="kpi">@KpiValue</div>
+            @if (!string.IsNullOrWhiteSpace(Subnote))
+            {
+                <div class="subtle">@Subnote</div>
+            }
+        </div>
+        <Sparkline Values="Spark" />
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Title { get; set; } = "";
+    [Parameter] public string KpiValue { get; set; } = "";
+    [Parameter] public string? Subnote { get; set; }
+    [Parameter] public IEnumerable<double> Spark { get; set; } = Array.Empty<double>();
+}

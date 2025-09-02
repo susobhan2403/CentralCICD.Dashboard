@@ -1,0 +1,140 @@
+﻿:root {
+    --card-bg: #ffffff;
+    --card-border: #e5e7eb;
+    --text: #0f172a;
+    --muted: #6b7280;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    color: var(--text);
+    background: #f6f7fb;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.3fr 2fr 1.2fr;
+    grid-auto-rows: minmax(120px, auto);
+    gap: 16px;
+}
+
+@media (max-width: 1100px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+    .card h4 {
+        margin: 0 0 6px 0;
+        font-weight: 600;
+        font-size: 14px;
+        color: #334155;
+    }
+
+.kpi {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.subtle {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.chart {
+    width: 100%;
+    height: 80px;
+}
+
+.chart-lg {
+    width: 100%;
+    height: 240px;
+}
+
+.chart-md {
+    width: 100%;
+    height: 180px;
+}
+
+.chart-gauge {
+    width: 100%;
+    height: 220px;
+}
+
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background: #eef2ff;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #60a5fa;
+}
+
+.scorecard {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .scorecard th, .scorecard td {
+        padding: 8px 6px;
+        border-bottom: 1px solid #e5e7eb;
+        font-size: 13px;
+    }
+
+    .scorecard th {
+        text-align: left;
+        color: #475569;
+    }
+
+    .scorecard td.right {
+        text-align: right;
+    }
+
+.header-title {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.tag {
+    padding: 2px 8px;
+    background: #eef2ff;
+    border-radius: 9999px;
+    font-size: 12px;
+    color: #334155;
+}

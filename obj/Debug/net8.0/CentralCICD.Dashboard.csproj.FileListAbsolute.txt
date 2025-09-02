@@ -1,0 +1,7 @@
+C:\Users\susob\source\repos\CentralCICD.Dashboard\CentralCICD.Dashboard\obj\Debug\net8.0\CentralCICD.Dashboard.csproj.AssemblyReference.cache
+C:\Users\susob\source\repos\CentralCICD.Dashboard\CentralCICD.Dashboard\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\susob\source\repos\CentralCICD.Dashboard\CentralCICD.Dashboard\obj\Debug\net8.0\CentralCICD.Dashboard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\susob\source\repos\CentralCICD.Dashboard\CentralCICD.Dashboard\obj\Debug\net8.0\CentralCICD.Dashboard.AssemblyInfoInputs.cache
+C:\Users\susob\source\repos\CentralCICD.Dashboard\CentralCICD.Dashboard\obj\Debug\net8.0\CentralCICD.Dashboard.AssemblyInfo.cs
+C:\Users\susob\source\repos\CentralCICD.Dashboard\CentralCICD.Dashboard\obj\Debug\net8.0\CentralCICD.Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\susob\source\repos\CentralCICD.Dashboard\CentralCICD.Dashboard\obj\Debug\net8.0\CentralCICD.Dashboard.MvcApplicationPartsAssemblyInfo.cache

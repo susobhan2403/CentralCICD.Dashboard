@@ -1,0 +1,14 @@
+﻿@inject IJSRuntime JS
+
+<div id="@Id" class="chart-gauge"></div>
+
+@code {
+    [Parameter] public double Value { get; set; }
+    [Parameter] public double Target { get; set; }
+    [Parameter] public string Id { get; set; } = $"gauge_{Guid.NewGuid():N}";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+        => await JS.InvokeVoidAsync("amc.renderGauge", Id, Value, Target);
+
+    public async ValueTask DisposeAsync() => await JS.InvokeVoidAsync("amc.dispose", Id);
+}

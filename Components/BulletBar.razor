@@ -1,0 +1,11 @@
+﻿<div class="progress-container" title="@($"{Value:0.#}{Unit} of {Target:0.#}{Unit}")">
+    <div class="progress-bar" style="width:@Percent%;"></div>
+</div>
+<div class="subtle">@($"{Value:0.#}{Unit}") / @($"{Target:0.#}{Unit}")</div>
+
+@code {
+    [Parameter] public double Value { get; set; }
+    [Parameter] public double Target { get; set; }
+    [Parameter] public string Unit { get; set; } = "";
+    private string Percent => $"{(Target <= 0 ? 0 : Math.Min(100, 100 * Value / Target)):0.#}%";
+}

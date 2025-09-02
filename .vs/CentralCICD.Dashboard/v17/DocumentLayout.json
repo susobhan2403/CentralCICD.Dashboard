@@ -1,0 +1,296 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\components\\scorecardtable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:components\\scorecardtable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\components\\bulletbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:components\\bulletbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\components\\kpicard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:components\\kpicard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\components\\gaugemeter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:components\\gaugemeter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\components\\donutkpi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:components\\donutkpi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\components\\histogram.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:components\\histogram.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\components\\sparkline.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:components\\sparkline.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\wwwroot\\js\\charts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:wwwroot\\js\\charts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\data\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:data\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\models\\kpirow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:models\\kpirow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|c:\\users\\susob\\source\\repos\\centralcicd.dashboard\\centralcicd.dashboard\\models\\projectadoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4FDCC0-FF15-5EA6-2FA9-9A80C00D15FB}|CentralCICD.Dashboard.csproj|solutionrelative:models\\projectadoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\App.razor",
+              "RelativeDocumentMoniker": "App.razor",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\App.razor",
+              "RelativeToolTip": "App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T12:58:36.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Pages\\Index.razor",
+              "RelativeToolTip": "Pages\\Index.razor",
+              "ViewState": "AgIAABsAAAAAAAAAAAAewCYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T12:58:04.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScorecardTable.razor",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\ScorecardTable.razor",
+              "RelativeDocumentMoniker": "Components\\ScorecardTable.razor",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\ScorecardTable.razor",
+              "RelativeToolTip": "Components\\ScorecardTable.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T12:57:43.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BulletBar.razor",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\BulletBar.razor",
+              "RelativeDocumentMoniker": "Components\\BulletBar.razor",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\BulletBar.razor",
+              "RelativeToolTip": "Components\\BulletBar.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T12:57:28.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KpiCard.razor",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\KpiCard.razor",
+              "RelativeDocumentMoniker": "Components\\KpiCard.razor",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\KpiCard.razor",
+              "RelativeToolTip": "Components\\KpiCard.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T12:57:14.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GaugeMeter.razor",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\GaugeMeter.razor",
+              "RelativeDocumentMoniker": "Components\\GaugeMeter.razor",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\GaugeMeter.razor",
+              "RelativeToolTip": "Components\\GaugeMeter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T12:57:01.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DonutKpi.razor",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\DonutKpi.razor",
+              "RelativeDocumentMoniker": "Components\\DonutKpi.razor",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\DonutKpi.razor",
+              "RelativeToolTip": "Components\\DonutKpi.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T12:56:44.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Histogram.razor",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\Histogram.razor",
+              "RelativeDocumentMoniker": "Components\\Histogram.razor",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\Histogram.razor",
+              "RelativeToolTip": "Components\\Histogram.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T12:56:31.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Sparkline.razor",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\Sparkline.razor",
+              "RelativeDocumentMoniker": "Components\\Sparkline.razor",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Components\\Sparkline.razor",
+              "RelativeToolTip": "Components\\Sparkline.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T12:56:04.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "Shared\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T12:55:39.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAswIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-02T12:55:11.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "charts.js",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\wwwroot\\js\\charts.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\charts.js",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\wwwroot\\js\\charts.js",
+              "RelativeToolTip": "wwwroot\\js\\charts.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-02T12:54:37.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-09-02T12:53:57.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DataService.cs",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Data\\DataService.cs",
+              "RelativeDocumentMoniker": "Data\\DataService.cs",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Data\\DataService.cs",
+              "RelativeToolTip": "Data\\DataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T12:53:05.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "KpiRow.cs",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Models\\KpiRow.cs",
+              "RelativeDocumentMoniker": "Models\\KpiRow.cs",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Models\\KpiRow.cs",
+              "RelativeToolTip": "Models\\KpiRow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T12:52:42.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProjectAdoption.cs",
+              "DocumentMoniker": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Models\\ProjectAdoption.cs",
+              "RelativeDocumentMoniker": "Models\\ProjectAdoption.cs",
+              "ToolTip": "C:\\Users\\susob\\source\\repos\\CentralCICD.Dashboard\\CentralCICD.Dashboard\\Models\\ProjectAdoption.cs",
+              "RelativeToolTip": "Models\\ProjectAdoption.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T12:52:20.06Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

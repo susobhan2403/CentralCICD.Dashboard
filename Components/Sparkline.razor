@@ -1,0 +1,21 @@
+﻿@inject IJSRuntime JS
+
+<div id="@Id" class="@CssClass"></div>
+
+@code {
+    [Parameter] public IEnumerable<double> Values { get; set; } = Array.Empty<double>();
+    [Parameter] public string Id { get; set; } = $"spark_{Guid.NewGuid():N}";
+    [Parameter] public bool Tiny { get; set; }
+    [Parameter] public string CssClass { get; set; } = "chart";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        var arr = Values?.ToArray() ?? Array.Empty<double>();
+        if (Tiny)
+            await JS.InvokeVoidAsync("amc.renderSparklineTiny", Id, arr);
+        else
+            await JS.InvokeVoidAsync("amc.renderSparkline", Id, arr);
+    }
+
+    public async ValueTask DisposeAsync() => await JS.InvokeVoidAsync("amc.dispose", Id);
+}
