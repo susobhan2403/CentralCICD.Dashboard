@@ -1,31 +1,35 @@
-﻿<table class="scorecard card">
-    <thead>
-        <tr>
-            <th style="width:30%">KPI</th>
-            <th class="right">Actual</th>
-            <th class="right">Target</th>
-            <th>Trend</th>
-            <th style="width:28%">KPI vs Target</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var r in Rows)
-        {
+<div class="card">
+    <h4>Security Templates Adoption Scorecards</h4>
+    <table class="scorecard">
+        <thead>
             <tr>
-                <td>@r.Kpi</td>
-                <td class="right">@($"{r.Actual:0.#}{r.Unit}")</td>
-                <td class="right">@($"{r.Target:0.#}{r.Unit}")</td>
-                <td>
-                    <Sparkline Values="r.TrendLine" Tiny="true" CssClass="chart" />
-                </td>
-                <td>
-                    <BulletBar Value="r.Actual" Target="r.Target" Unit="@r.Unit" />
-                </td>
+                <th style="width:30%">KPI</th>
+                <th class="right">Actual</th>
+                <th class="right">Target</th>
+                <th>Trend</th>
+                <th style="width:28%">KPI vs Target</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var r in Rows)
+            {
+                <tr>
+                    <td>@r.Kpi</td>
+                    <td class="right">@($"{r.Actual:0.#}{r.Unit}")</td>
+                    <td class="right">@($"{r.Target:0.#}{r.Unit}")</td>
+                    <td>
+                        <Sparkline Values="r.TrendLine" Tiny="true" CssClass="chart" />
+                    </td>
+                    <td>
+                        <BulletBar Value="r.Actual" Target="r.Target" Unit="@r.Unit" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 
 @code {
     [Parameter] public IReadOnlyList<KpiRow> Rows { get; set; } = Array.Empty<KpiRow>().ToList();
 }
+

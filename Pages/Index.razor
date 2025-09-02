@@ -25,9 +25,9 @@
 }
 
 <div class="container">
-    <div class="grid">
-        <!-- LEFT COLUMN: stacked KPI cards -->
-        <div style="grid-column:1; grid-row:span 3; display:flex; flex-direction:column; gap:16px;">
+    <div class="top-grid">
+        <!-- LEFT COLUMN: KPI cards and scorecard -->
+        <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="card">
                 <h4>Average Adoption % (Org)</h4>
                 <div class="row" style="align-items:flex-end">
@@ -42,24 +42,11 @@
             <KpiCard Title="Last Month — Projects Migrated" KpiValue="@_monthly.Last().ToString()" Subnote="+ prior month trend"
                      Spark="@_monthly.Select(i => (double)i)" />
 
-            <KpiCard Title="Security Templates Applied (Avg %)" KpiValue="@($"{Data.AvgSecurityAdoption() * 100:0.0}%")"
-                     Subnote="Includes SAST/SCA/Container/Secret scans" Spark="@_score[2].TrendLine" />
-
-            <KpiCard Title="Total Projects" KpiValue="@Data.TotalProjects().ToString()" Subnote="Front-runners in scope"
-                     Spark="@Enumerable.Range(1,12).Select(i => (double)(Data.TotalProjects()-12+i))" />
-
-            <KpiCard Title="Pipelines Migrated (Median per Project)"
-                     KpiValue="@_projects.Select(p => p.MigratedPipelines).OrderBy(x => x).ElementAt(_projects.Count / 2).ToString()"
-                     Subnote="Across all domains" Spark="@_projects.Select(p => Math.Round(p.AdoptionPct*100,1))" />
-        </div>
-
-        <!-- MIDDLE: Scorecard -->
-        <div style="grid-column:2; grid-row:span 3;">
             <ScorecardTable Rows="@_score" />
         </div>
 
-        <!-- RIGHT: donuts -->
-        <div style="grid-column:3; grid-row:span 3; display:flex; flex-direction:column; gap:16px;">
+        <!-- RIGHT COLUMN: donuts -->
+        <div style="display:flex; flex-direction:column; gap:16px;">
             <div class="card">
                 <h4>Org Adoption (vs Target)</h4>
                 <DonutKpi Percent="@_org.adoptionPct" Label="@($"{_org.adoptionPct}%")" />
@@ -70,7 +57,9 @@
                 <DonutKpi Percent="@_sec.securityPct" Label="@($"{_sec.securityPct}%")" />
             </div>
         </div>
+    </div>
 
+    <div class="grid">
         <!-- BOTTOM: large tiles -->
         <div class="card" style="grid-column: span 2;">
             <h4>Adoption Distribution (Projects by % migrated)</h4>
