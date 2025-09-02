@@ -24,104 +24,114 @@
     string CurrencyLike(double v) => $"~{v:0.##}";
 }
 
-<!-- LEFT COLUMN: stacked KPI cards -->
-<div class="card">
-    <h4>Average Adoption % (Org)</h4>
-    <div class="row" style="align-items:flex-end">
-        <div>
-            <div class="kpi">@($"{Data.AvgAdoptionPct() * 100:0.0}%")</div>
-            <div class="subtle">Target: @_org.targetPct%</div>
-        </div>
-        <Sparkline Values="@_score[1].TrendLine" />
-    </div>
-</div>
-
-<KpiCard Title="Last Month — Projects Migrated" KpiValue="@_monthly.Last().ToString()" Subnote="+ prior month trend"
-         Spark="@_monthly.Select(i => (double)i)" />
-
-<KpiCard Title="Security Templates Applied (Avg %)" KpiValue="@($"{Data.AvgSecurityAdoption() * 100:0.0}%")"
-         Subnote="Includes SAST/SCA/Container/Secret scans" Spark="@_score[2].TrendLine" />
-
-<KpiCard Title="Total Projects" KpiValue="@Data.TotalProjects().ToString()" Subnote="Front-runners in scope"
-         Spark="@Enumerable.Range(1,12).Select(i => (double)(Data.TotalProjects()-12+i))" />
-
-<KpiCard Title="Pipelines Migrated (Median per Project)"
-         KpiValue="@_projects.Select(p => p.MigratedPipelines).OrderBy(x => x).ElementAt(_projects.Count / 2).ToString()"
-         Subnote="Across all domains" Spark="@_projects.Select(p => Math.Round(p.AdoptionPct*100,1))" />
-
-<!-- MIDDLE: Scorecard -->
-<ScorecardTable Rows="@_score" />
-
-<!-- RIGHT: donuts -->
-<div class="card">
-    <h4>Org Adoption (vs Target)</h4>
-    <DonutKpi Percent="@_org.adoptionPct" Label="@($"{_org.adoptionPct}%")" />
-</div>
-
-<div class="card">
-    <h4>Security Template Adoption</h4>
-    <DonutKpi Percent="@_sec.securityPct" Label="@($"{_sec.securityPct}%")" />
-</div>
-
-<!-- BOTTOM: large tiles -->
-<div class="card" style="grid-column: span 2;">
-    <h4>Adoption Distribution (Projects by % migrated)</h4>
-    <Histogram Values="@_dist" />
-</div>
-
-<div class="card">
-    <h4>Adoption Gauge</h4>
-    <GaugeMeter Value="@_org.adoptionPct" Target="@_org.targetPct" />
-</div>
-
-<div class="card" style="grid-column: span 2;">
-    <h4>Projects — Last 12 months migrations</h4>
-    <Sparkline Values="@_monthly.Select(i => (double)i)" CssClass="chart-lg" />
-</div>
-
-<div class="card">
-    <h4>Domain-wise Avg Adoption %</h4>
-    <ul style="list-style:none; padding-left:0; margin:0;">
-        @foreach (var (label, value) in _domainSplit)
-        {
-            <li class="row" style="margin:8px 0;">
-                <div style="min-width:120px;">@label</div>
-                <div style="flex:1;">
-                    <BulletBar Value="@value" Target="100" Unit="%" />
+<div class="container">
+    <div class="grid">
+        <!-- LEFT COLUMN: stacked KPI cards -->
+        <div style="grid-column:1; grid-row:span 3; display:flex; flex-direction:column; gap:16px;">
+            <div class="card">
+                <h4>Average Adoption % (Org)</h4>
+                <div class="row" style="align-items:flex-end">
+                    <div>
+                        <div class="kpi">@($"{Data.AvgAdoptionPct() * 100:0.0}%")</div>
+                        <div class="subtle">Target: @_org.targetPct%</div>
+                    </div>
+                    <Sparkline Values="@_score[1].TrendLine" />
                 </div>
-            </li>
-        }
-    </ul>
-</div>
+            </div>
 
-<!-- Mini table for top projects -->
-<div class="card" style="grid-column: span 3;">
-    <h4>Front-Runner Projects — Adoption Snapshot</h4>
-    <table class="scorecard" style="margin-top:6px;">
-        <thead>
-            <tr>
-                <th>Project</th>
-                <th class="right">Adoption %</th>
-                <th class="right">Security %</th>
-                <th class="right">Tech %</th>
-                <th class="right">Build Success</th>
-                <th class="right">Deploy Success</th>
-                <th class="right">Pipelines (Migrated/Total)</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var p in _projects)
-            {
-                <tr>
-                    <td>@p.Name</td>
-                    <td class="right">@($"{p.AdoptionPct * 100:0.0}%")</td>
-                    <td class="right">@($"{p.SecurityAdoptionPct * 100:0.0}%")</td>
-                    <td class="right">@($"{p.TechAdoptionPct * 100:0.0}%")</td>
-                    <td class="right">@($"{p.BuildSuccessRate * 100:0.0}%")</td>
-                    <td class="right">@($"{p.DeploySuccessRate * 100:0.0}%")</td>
-                    <td class="right">@($"{p.MigratedPipelines}/{p.TotalPipelines}")</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+            <KpiCard Title="Last Month — Projects Migrated" KpiValue="@_monthly.Last().ToString()" Subnote="+ prior month trend"
+                     Spark="@_monthly.Select(i => (double)i)" />
+
+            <KpiCard Title="Security Templates Applied (Avg %)" KpiValue="@($"{Data.AvgSecurityAdoption() * 100:0.0}%")"
+                     Subnote="Includes SAST/SCA/Container/Secret scans" Spark="@_score[2].TrendLine" />
+
+            <KpiCard Title="Total Projects" KpiValue="@Data.TotalProjects().ToString()" Subnote="Front-runners in scope"
+                     Spark="@Enumerable.Range(1,12).Select(i => (double)(Data.TotalProjects()-12+i))" />
+
+            <KpiCard Title="Pipelines Migrated (Median per Project)"
+                     KpiValue="@_projects.Select(p => p.MigratedPipelines).OrderBy(x => x).ElementAt(_projects.Count / 2).ToString()"
+                     Subnote="Across all domains" Spark="@_projects.Select(p => Math.Round(p.AdoptionPct*100,1))" />
+        </div>
+
+        <!-- MIDDLE: Scorecard -->
+        <div style="grid-column:2; grid-row:span 3;">
+            <ScorecardTable Rows="@_score" />
+        </div>
+
+        <!-- RIGHT: donuts -->
+        <div style="grid-column:3; grid-row:span 3; display:flex; flex-direction:column; gap:16px;">
+            <div class="card">
+                <h4>Org Adoption (vs Target)</h4>
+                <DonutKpi Percent="@_org.adoptionPct" Label="@($"{_org.adoptionPct}%")" />
+            </div>
+
+            <div class="card">
+                <h4>Security Template Adoption</h4>
+                <DonutKpi Percent="@_sec.securityPct" Label="@($"{_sec.securityPct}%")" />
+            </div>
+        </div>
+
+        <!-- BOTTOM: large tiles -->
+        <div class="card" style="grid-column: span 2;">
+            <h4>Adoption Distribution (Projects by % migrated)</h4>
+            <Histogram Values="@_dist" />
+        </div>
+
+        <div class="card">
+            <h4>Adoption Gauge</h4>
+            <GaugeMeter Value="@_org.adoptionPct" Target="@_org.targetPct" />
+        </div>
+
+        <div class="card" style="grid-column: span 2;">
+            <h4>Projects — Last 12 months migrations</h4>
+            <Sparkline Values="@_monthly.Select(i => (double)i)" CssClass="chart-lg" />
+        </div>
+
+        <div class="card">
+            <h4>Domain-wise Avg Adoption %</h4>
+            <ul style="list-style:none; padding-left:0; margin:0;">
+                @foreach (var (label, value) in _domainSplit)
+                {
+                    <li class="row" style="margin:8px 0;">
+                        <div style="min-width:120px;">@label</div>
+                        <div style="flex:1;">
+                            <BulletBar Value="@value" Target="100" Unit="%" />
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+
+        <!-- Mini table for top projects -->
+        <div class="card" style="grid-column: span 3;">
+            <h4>Front-Runner Projects — Adoption Snapshot</h4>
+            <table class="scorecard" style="margin-top:6px;">
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th class="right">Adoption %</th>
+                        <th class="right">Security %</th>
+                        <th class="right">Tech %</th>
+                        <th class="right">Build Success</th>
+                        <th class="right">Deploy Success</th>
+                        <th class="right">Pipelines (Migrated/Total)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var p in _projects)
+                    {
+                        <tr>
+                            <td>@p.Name</td>
+                            <td class="right">@($"{p.AdoptionPct * 100:0.0}%")</td>
+                            <td class="right">@($"{p.SecurityAdoptionPct * 100:0.0}%")</td>
+                            <td class="right">@($"{p.TechAdoptionPct * 100:0.0}%")</td>
+                            <td class="right">@($"{p.BuildSuccessRate * 100:0.0}%")</td>
+                            <td class="right">@($"{p.DeploySuccessRate * 100:0.0}%")</td>
+                            <td class="right">@($"{p.MigratedPipelines}/{p.TotalPipelines}")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
